@@ -53,7 +53,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Britannia - Scheme Price List        </h1>
+        <h1>Britannia - Scheme Price List</h1>
       </header>
       <main>
         <div className="input-fields">
@@ -80,8 +80,8 @@ function App() {
         </div>
         <div className="table-container">
           <table>
-            <thead>
-              <tr>
+            <thead className='sticky-header'>
+              <tr className='tableHead'>
                 {headers.map((header) => (
                   <th key={header}>{header}</th>
                 ))}

@@ -66,7 +66,8 @@ input {
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  overflow-x: auto; /* Make table scrollable horizontally */
+  max-height: 70vh; /* Ensure the table container is scrollable */
+  overflow-y: auto;
 }
 
 table {
@@ -118,6 +119,13 @@ tr:nth-child(even) {
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
+}
+
+.sticky-header {
+  position: sticky;
+  top: 0;
+  background-color: #d42715;
+  z-index: 1;
 }
 
 @media (max-width: 768px) {
