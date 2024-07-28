@@ -79,7 +79,7 @@ function App() {
           </div>
         </div>
         <div className="table-container">
-          <table>
+          <table className="responsive-table">
             <thead className='sticky-header'>
               <tr className='tableHead'>
                 {headers.map((header) => (
