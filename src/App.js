@@ -34,7 +34,7 @@ function App() {
       'Net': net,
       'RM %': item['Retailer Margin'] || '',
       'PTR': item['Selling Price tax'] || '',
-      'Brand': item['Brand Desc'] || ''
+      'Brand': item['Sub Brand Desc'] || ''
     };
   };
 
