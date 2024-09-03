@@ -21,7 +21,7 @@ function App() {
   }, []);
 
   if (data.length === 0) return <div className="loading-container"><div className="loading-spinner"></div></div>;
-  const headers = ['Name', 'MRP', 'Net', 'RM %', 'PTR', 'Brand'];
+  const headers = ['Name', 'MRP', 'Net', 'RM %', 'PTR', 'Sub Brand'];
 
   const mapDataToHeaders = (item) => {
     const ptr = parseFloat(item['Selling Price tax'] || 0);
@@ -34,7 +34,7 @@ function App() {
       'Net': net,
       'RM %': item['Retailer Margin'] || '',
       'PTR': item['Selling Price tax'] || '',
-      'Brand': item['Sub Brand Desc'] || ''
+      'Sub Brand': item['Sub Brand Desc'] || ''
     };
   };
 
